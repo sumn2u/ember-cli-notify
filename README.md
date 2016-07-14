@@ -1,26 +1,28 @@
-# Ember-cli-notify
+# Ember CLI Notify
 
-This README outlines the details of collaborating on this Ember addon.
+Ember add on for Notification
+# Installation
 
-## Installation
+Include the library as an [NPM](https://www.npmjs.com/) dependency, from within an [ember-cli](http://www.ember-cli.com/) app.
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+```
+ember install ember-cli-notify
+```
 
-## Running
+*If using ember-cli 0.1.5 – 0.2.3*
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+```
+ember install:addon ember-cli-notify
+```
 
-## Running Tests
+Run the library's blueprint to pull in its Bower dependencies. This only needs to be done once.
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+```
+ember generate ember-cli-notify
+```
+### Controller
+```javascript
+export default Ember.Controller.extend({
+	notify: Ember.inject.service('ember-cli-notify')
+});
+```
