@@ -1,5 +1,5 @@
 # Ember CLI Notify
-
+[![Build Status](https://travis-ci.org/sumn2u/ember-cli-notify.svg?branch=master)](https://travis-ci.org/sumn2u/ember-cli-notify.svg?branch=master)
 Ember add on for Notification
 # Installation
 
